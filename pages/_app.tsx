@@ -9,6 +9,7 @@ import { makeStore, wrapper } from '@/store';
 import { Provider } from 'react-redux';
 import { persistStore } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react';
+import Loader from '@/components/Loader';
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
@@ -22,7 +23,7 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
+      <PersistGate loading={<Loader />} persistor={persistor}>
         <main className={roboto.className}>
           <MainLayout>
             <Component {...pageProps} />

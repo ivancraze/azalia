@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { memo } from 'react';
 
 const Home = (): JSX.Element => {
   return (
@@ -17,4 +16,4 @@ const Home = (): JSX.Element => {
   );
 };
 
-export default memo(Home);
+export default Home;
