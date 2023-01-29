@@ -1,9 +1,12 @@
 .cardsLayout {
-  padding: 30px;
   background-color: #FFF;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fill, minmax(332px, 1fr));
   justify-items: center;
   overflow: auto;
+
+  @media screen and (min-width: 576px) {
+    padding: 30px;
+  }
 }
