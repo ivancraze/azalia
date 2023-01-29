@@ -1,0 +1,35 @@
+.buttonsContainer {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  background: var(--color-button-background);
+  border-radius: 90px;
+  min-width: 175px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.amount {
+  user-select: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.button {
+  color: var(--color-white);
+  border-radius: 90px;
+  cursor: pointer;
+  border: none;
+
+  &__AddToCart {
+    background: var(--color-button-green);
+    padding: 12px 20px;
+  }
+
+  &__InCart {
+    background: var(--color-button-blue);
+    padding: 12px 55px;
+  }
+}

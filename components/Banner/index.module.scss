@@ -1,0 +1,15 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 332px;
+  height: 462px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: var(--font-color);
+  }
+}
